@@ -39,4 +39,13 @@ void main(List<String> args) {
   inteiros.removeAt(0); // remove o valor na posição 0
   print(inteiros.elementAt(2)); // escreve na tela o elemento
   // na posição 2 da lista
+
+  // É possível declarar uma lista sem declarar o tipo de dado
+  List lista = [];
+  // Além disso, é possível declarar uma lista com vários
+  // tipos de dados
+  List listaMaluca = [1, "String", true];
+
+  // ATALHOS DE COMENTÁRIO:
+  // ctrl ; || ctrl /
 }
