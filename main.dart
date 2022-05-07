@@ -1,20 +1,20 @@
 void main(List<String> args) {
-  // Escrever na tela
+  // escrever na tela
   print("Hello World");
 
-  // Declarar e atribuir um valor a uma variável inteira
+  // declarar e atribuir um valor a uma variável inteira
   // e escrever na tela se a variável é par (boolean)
   int x = 3;
   print(x.isEven);
 
-  // Escreve na tela o MDC de um inteiro e outro número
+  // escrever na tela o MDC de um inteiro e outro número
   print(x.gcd(9));
 
-  // Transforma o inteiro em uma String
+  // transformar um inteiro em uma String
   int y = int.parse("9");
   print(y);
 
-  // Soma as variáveis x e y, declaradas e atribuídas
+  // somar as variáveis x e y, declaradas e atribuídas
   // anteriormente
   int soma = x + y;
   print(soma);
@@ -43,8 +43,26 @@ void main(List<String> args) {
   // É possível declarar uma lista sem declarar o tipo de dado
   List lista = [];
   // Além disso, é possível declarar uma lista com vários
-  // tipos de dados
-  List listaMaluca = [1, "String", true];
+  // tipos de dados (dinâmica)
+  List listaDinamica = [1, "String", true];
+
+  // ------------- PROPRIEDADES -------------- //
+  /*
+  * T first - acessa o primeiro elemento
+  * T last - acessa o último elemento
+  * bool isEmpty - retorna true se não houverem elementos
+  * add(T valor) - adiciona T valor ao final da lista
+  * void clear() - elimina todos os elementos da lista
+  * bool contains(T objeto) - retorna true se o objeto T
+  * estiver na lista
+  * T elementAt(int posicao) - retorna true se o elemento
+  * encontra-se na posição passada como parâmetro
+  * void insert(int posicao, T elemento) - adiciona um elemento
+  * em uma posicao específica
+  * void remove(T objeto) - remove um objeto T da lista
+  * void removeAt(int posicao) - remove um elemento de acordo
+  * com a posicao na lista
+  */
 
   // ATALHOS DE COMENTÁRIO:
   // ctrl ; || ctrl /
