@@ -39,6 +39,8 @@ void main(List<String> args) {
   inteiros.removeAt(0); // remove o valor na posição 0
   print(inteiros.elementAt(2)); // escreve na tela o elemento
   // na posição 2 da lista
+  print(inteiros.last); // escreve na tela o último elemento
+  print(inteiros[1]); // escreve na tela o elemento na posição 1
 
   // É possível declarar uma lista sem declarar o tipo de dado
   List lista = [];
@@ -64,6 +66,51 @@ void main(List<String> args) {
   * com a posicao na lista
   */
 
+  List<int> valoresFor = [10, 9, 8, 7];
+
+  for (int i = 0; i < valoresFor.length; i++) {
+    int x = valoresFor[i];
+    print(valoresFor[i]);
+  }
+
+  for (int x in valoresFor) {
+    print(x);
+  }
+
+  valoresFor.forEach((element) {});
+
+  valoresFor.forEach((int x) {
+    print(x);
+  });
+
+  valoresFor.forEach(imprime);
+
+  valoresFor.forEach(imprimeParOuImpar);
+
+  Map<String, int> mapa = {
+    'primeiro': 1,
+    'segundo': 2,
+    'terceiro': 3,
+  };
+
+  mapa.forEach((key, value) {
+    print('Mapa[$key] = $value');
+  });
+
+  mapa.forEach(imprimeMapa);
+
   // ATALHOS DE COMENTÁRIO:
   // ctrl ; || ctrl /
+}
+
+void imprime(int x) {
+  print('O valor de x é $x');
+}
+
+void imprimeParOuImpar(int x) {
+  print('O número $x é par? ${x.isEven ? 'Sim, é par' : 'Não, é ímpar'}');
+}
+
+void imprimeMapa(String chave, int valor) {
+  print('Chave: $chave - Valor: $valor');
 }
