@@ -99,6 +99,9 @@ void main(List<String> args) {
 
   mapa.forEach(imprimeMapa);
 
+  print(soma3(3, 3));
+  print(soma3(3));
+
   // ATALHOS DE COMENTÁRIO:
   // ctrl ; || ctrl /
 }
@@ -114,3 +117,11 @@ void imprimeParOuImpar(int x) {
 void imprimeMapa(String chave, int valor) {
   print('Chave: $chave - Valor: $valor');
 }
+
+int soma(int x, int y) {
+  return x + y;
+}
+
+int soma2(x, int y) => x + y;
+
+int soma3(int x, [int y = 8]) => x + y;
