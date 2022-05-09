@@ -102,6 +102,29 @@ void main(List<String> args) {
   print(soma3(3, 3));
   print(soma3(3));
 
+  int? intNull = null;
+
+  if (intNull != null) {
+    print(intNull.isNegative);
+  }
+
+  print(intNull!.isNegative);
+
+  int x_3 = intNull!;
+
+  String? podeSerNull = null;
+  //podeSerNull = 'Carro';
+
+  String resultado = '';
+
+  if (podeSerNull != null) {
+    resultado = podeSerNull;
+  } else {
+    resultado = '';
+  }
+
+  resultado = podeSerNull ?? '';
+
   // ATALHOS DE COMENTÁRIO:
   // ctrl ; || ctrl /
 }
