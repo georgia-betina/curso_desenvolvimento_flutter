@@ -13,7 +13,13 @@ class Pessoa {
 
   // É igual a
 
-  Pessoa(this._nome, {this.idade = 21});
+  // Pessoa(this._nome, {this.idade = 21});
+
+  // Pessoa(String nome) {
+  //   this._nome = nome;
+  // }
+
+  Pessoa({this.idade = 21}) {}
 
   void set nome(String nome) {
     this._nome = nome;
@@ -33,5 +39,9 @@ class Pessoa {
   String toString() {
     // TODO: implement toString
     return 'Nome: $nome - $idade anos';
+  }
+
+  bool ehDeMaior() {
+    return idade! > 18;
   }
 }
