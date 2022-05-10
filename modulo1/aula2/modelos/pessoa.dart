@@ -37,7 +37,6 @@ class Pessoa {
 
   @override
   String toString() {
-    // TODO: implement toString
     return 'Nome: $nome - $idade anos';
   }
 

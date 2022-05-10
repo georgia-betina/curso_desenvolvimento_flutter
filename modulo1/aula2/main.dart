@@ -1,6 +1,8 @@
+import 'modelos/carro.dart';
 import 'modelos/mes.dart';
 import 'modelos/pessoa.dart';
 import 'modelos/pessoa_norte_americana.dart';
+import 'modelos/veiculo.dart';
 
 void main(List<String> args) {
   // Pessoa p = new Pessoa(nome: 'Vinicius');
@@ -30,4 +32,7 @@ void main(List<String> args) {
 
   print(p.ehDeMaior());
   print(pn.ehDeMaior());
+
+  Veiculo veiculo = new Carro();
+  veiculo.acelerar();
 }
