@@ -1,0 +1,84 @@
+%    oooo                                  .o8                     
+%    `888                                 "888                     
+%     888 .oo.    .ooooo.   .oooo.    .oooo888   .ooooo.  oooo d8b 
+%     888P"Y88b  d88' `88b `P  )88b  d88' `888  d88' `88b `888""8P 
+%     888   888  888ooo888  .oP"888  888   888  888ooo888  888     
+%     888   888  888    .o d8(  888  888   888  888    .o  888     
+%    o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b   
+
+% ᴘᴀɢɪɴᴀ - ᴍᴀʀɢᴇɴꜱ
+    \usepackage{geometry} % ᴘᴇʀᴍɪᴛᴇ ᴍᴜᴅᴀʀ ᴀꜱ ᴍᴀʀɢᴇɴꜱ
+        \geometry{ % ᴄᴏɴꜰɪɢᴜʀᴀᴄᴀᴏ ᴅᴀ ᴍᴀʀɢᴇᴍ
+            left = 2.3cm,
+            right = 2.3cm,
+            top = 2.0cm,
+            bottom = 2.5cm
+        } 
+
+% ᴘᴀɢɪɴᴀ - ɪᴅɪᴏᴍᴀ
+    \usepackage[portuguese]{babel} % ɪᴅɪᴏᴍᴀ ᴇᴍ ᴘᴏʀᴛᴜɢᴜᴇꜱ
+    \usepackage{ctex} % ᴘᴇʀᴍɪᴛᴇ ᴀᴅɪᴄɪᴏɴᴀʀ ᴀ ᴛɪᴘᴏɢʀᴀꜰɪᴀ ᴄʜɪɴᴇꜱᴀ
+
+% ᴘᴀɢɪɴᴀ - ᴄᴀʙᴇᴄᴀʟʜᴏ 
+    \usepackage{fancyhdr} % ᴘᴇʀᴍɪᴛᴇ ᴘᴇʀꜱᴏɴᴀʟɪᴢᴀʀ ᴄᴀʙᴇᴄᴀʟʜᴏꜱ
+        \pagestyle{fancy} % ᴄᴏɴꜰɪɢᴜʀᴀ ᴏ ᴄᴀʙᴇᴄᴀʟʜᴏ ɴᴏ ᴇꜱᴛɪʟᴏ "ꜰᴀɴᴄʏ"
+            \fancyhf{}
+            \rhead{ % ᴄᴏɴꜰɪɢᴜʀᴀ ᴏ ᴄᴀʙᴇᴄᴀʟʜᴏ ɴᴀ ᴅɪʀᴇɪᴛᴀ
+                \ifnum1=\value{page}
+                    \vspace{2cm}
+                    \small
+                    \texttt{
+                        \bf $^{NEMOBIS}$
+                    }
+                    \includegraphics[scale=0.02]{logos/udesc-logo-horizontal.pdf}
+                    \hspace{0.5cm}
+                \else
+                    \small
+                    \texttt{
+                        \bf $^{NEMOBIS}$
+                    }
+                    \includegraphics[scale=0.02]{logos/udesc-logo-horizontal.pdf}
+                    \hspace{0.5cm}
+                \fi
+            }
+            \lhead{}
+            \cfoot{ % ᴄᴏɴꜰɪɢᴜʀᴀ ᴏ ʀᴏᴅᴀᴘᴇ ɴᴏ ᴄᴇɴᴛʀᴏ
+                \textsf{\thepage}
+            }
+        \renewcommand{\headrulewidth}{0pt} % ᴅᴇꜰɪɴᴇ ᴀ ʟɪɴʜᴀ ᴅᴏ ᴄᴀʙᴇᴄᴀʟʜᴏ ᴄᴏᴍᴏ ᴛᴀᴍᴀɴʜᴏ 0
+
+% ᴍᴀᴛᴇᴍᴀᴛɪᴄᴀ
+    \usepackage{amsmath,amsthm} % ᴍᴇʟʜᴏʀᴀ ᴀ ᴠɪꜱᴜᴀʟɪᴢᴀᴄᴀᴏ ᴅᴇ ꜰᴏʀᴍᴜʟᴀꜱ
+    \usepackage{amsfonts} % ᴘᴇʀᴍɪᴛᴇ ᴜᴛɪʟɪᴢᴀʀ ꜰᴏɴᴛᴇꜱ ɴᴏ ᴍᴏᴅᴏ ᴍᴀᴛʜ
+    
+% ꜰɪɢᴜʀᴀꜱ
+    \usepackage{graphicx} % ᴘᴇʀᴍɪᴛᴇ ᴄᴏɴꜰɪɢᴜʀᴀʀ ɪᴍᴀɢᴇɴꜱ
+    
+% ᴘᴅꜰ
+    \usepackage{pdfpages} % ᴘᴇʀᴍɪᴛᴇ ᴀᴄʀᴇꜱᴄᴇɴᴛᴀʀ ᴘᴅꜰ
+
+% ʟɪɴᴋꜱ
+    \usepackage{hyperref} % ᴘᴇʀᴍɪᴛᴇ ᴀᴅɪᴄɪᴏɴᴀʀ ʟɪɴᴋꜱ
+        \hypersetup{ % ᴄᴏɴꜰɪɢᴜʀᴀᴄᴀᴏ ᴅᴏꜱ ʟɪɴᴋꜱ
+            colorlinks=true,
+            linkcolor=magenta,
+            filecolor=magenta,      
+            urlcolor=teal,
+            pdfpagemode=FullScreen,
+        }
+
+% ᴄᴏʀᴇꜱ
+    \usepackage{xcolor} % ᴀᴅɪᴄɪᴏɴᴀ ᴍᴀɪꜱ ᴄᴏʀᴇꜱ
+        \definecolor{azulEscuro}{HTML}{172A3A} % ᴄʀɪᴀ ᴀ ᴄᴏʀ ᴀᴢᴜʟᴇꜱᴄᴜʀᴏ
+        \definecolor{azulMaisEscuro}{HTML}{09124C} % ᴄʀɪᴀ ᴀ ᴄᴏʀ ᴀᴢᴜʟᴍᴀɪꜱᴇꜱᴄᴜʀᴏ
+        
+        \newcommand{\colorBoxTextWidth}[1]{\colorbox{azulEscuro!30}{\parbox{\textwidth}{#1}}} % Qᴜᴇʙʀᴀ ᴀ ʟɪɴʜᴀ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀᴍᴇɴᴛᴇ ᴅᴀ ᴄᴏʟᴏʀʙᴏx
+    
+% ᴛᴀʙᴇʟᴀ
+    \usepackage{tabularx} % ᴘᴇʀᴍɪᴛᴇ ᴘᴇʀꜱᴏɴᴀʟɪᴢᴀʀ ᴛᴀʙᴇʟᴀꜱ
+    
+% ᴇɴᴜᴍɪᴛᴇᴍ
+    \usepackage{enumitem} % ᴘᴇʀᴍɪᴛᴇ ᴘᴇʀꜱᴏɴᴀʟɪᴢᴀʀ ɪᴛᴇᴍɪᴢᴇ
+
+% ᴜʀʟ
+    \usepackage{url} % ᴘᴇʀᴍɪᴛᴇ ᴜᴛɪʟɪᴢᴀʀ ᴏ ᴄᴏᴍᴀɴᴅᴏ \ᴘᴀᴛʜ ᴇ Qᴜᴇʙʀᴀʀ ʟɪɴʜᴀ
